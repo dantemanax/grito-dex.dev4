@@ -4,7 +4,11 @@ const GEN_RANGES = {
     "3": { min: 252, max: 386 },
     "4": { min: 387, max: 493 },
     "5": { min: 494, max: 649 },
-    "all": { min: 1, max: 649 }
+    "6": { min: 650, max: 721 },  // Gen 6 (Kalos)
+    "7": { min: 722, max: 809 },  // Gen 7 (Alola)
+    "8": { min: 810, max: 905 },  // Gen 8 (Galar / Hisui)
+    "9": { min: 906, max: 1025 }, // Gen 9 (Paldea)
+    "all": { min: 1, max: 1025 }
 };
 
 const appBody = document.getElementById('app-body');
@@ -102,7 +106,7 @@ async function startNewRound() {
 function renderOptions(pokemons) {
     optionsContainer.innerHTML = pokemons.map(p => `
         <button class="option-btn" data-id="${p.id}" onclick="handleGuess(${p.id}, this)">
-            <img src="${p.sprite}" style="width:45px; height:45px; margin-right:15px; image-rendering:pixelated">
+            <img src="${p.sprite}" style="width:40px; height:40px; margin-right:10px; image-rendering:pixelated">
             <span>${p.name}</span>
         </button>
     `).join('');
@@ -134,4 +138,5 @@ playBtn.onclick = () => cryAudio?.play();
 nextBtn.onclick = startNewRound;
 genSelect.onchange = startNewRound;
 
+// Inicializa el juego al cargar la página
 startNewRound();
