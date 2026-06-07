@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grito-Dex Pro | v9.1 Full Generations</title>
+    <title>Grito-Dex Pro | v9.2 Full Layout</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -25,7 +25,7 @@
             <button id="btn-view-gritodex">DEX</button>
         </div>
 
-        <!-- VISTA JUGAR (Altura controlada) -->
+        <!-- VISTA JUGAR (Controles verticales de ancho completo) -->
         <div id="game-view">
             <div class="controls-top">
                 <select id="gen-select" class="retro-select">
@@ -40,7 +40,7 @@
                     <option value="9">GEN 9 (PALDEA)</option>
                     <option value="all">TODAS (1-9)</option>
                 </select>
-                <button id="play-btn">OÍR</button>
+                <button id="play-btn">REPRODUCIR GRITO</button>
             </div>
 
             <div class="pokedex-screen">
@@ -51,11 +51,11 @@
 
             <div id="feedback" class="hidden">
                 <p id="message"></p>
-                <button id="next-btn">SIGUIENTE</button>
+                <button id="next-btn">CONTINUAR</button>
             </div>
         </div>
 
-        <!-- VISTA DEX (Base de altura con Scroll) -->
+        <!-- VISTA DEX (2 COLUMNAS + SCROLL) -->
         <div id="gritodex-view" class="hidden">
             <div class="pokedex-screen">
                 <div id="gritodex-screen">
@@ -73,8 +73,8 @@
         </div>
     </div>
 
-    <img src="https://assets.mixkit.co/active_storage/sfx/2000/2000-preview.mp3" id="snd-success" style="display:none">
-    <img src="https://assets.mixkit.co/active_storage/sfx/2003/2003-preview.mp3" id="snd-error" style="display:none">
+    <audio id="snd-success" src="https://assets.mixkit.co/active_storage/sfx/2000/2000-preview.mp3"></audio>
+    <audio id="snd-error" src="https://assets.mixkit.co/active_storage/sfx/2003/2003-preview.mp3"></audio>
 
     <script src="script.js"></script>
 </body>
