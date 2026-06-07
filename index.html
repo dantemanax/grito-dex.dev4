@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grito-Dex Pro | v8.6 Final</title>
+    <title>Grito-Dex Pro | v9.1 Full Generations</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -25,6 +25,7 @@
             <button id="btn-view-gritodex">DEX</button>
         </div>
 
+        <!-- VISTA JUGAR (Altura controlada) -->
         <div id="game-view">
             <div class="controls-top">
                 <select id="gen-select" class="retro-select">
@@ -33,9 +34,13 @@
                     <option value="3">GEN 3 (HOENN)</option>
                     <option value="4">GEN 4 (SINNOH)</option>
                     <option value="5">GEN 5 (UNOVA)</option>
-                    <option value="all">TODAS (1-5)</option>
+                    <option value="6">GEN 6 (KALOS)</option>
+                    <option value="7">GEN 7 (ALOLA)</option>
+                    <option value="8">GEN 8 (GALAR)</option>
+                    <option value="9">GEN 9 (PALDEA)</option>
+                    <option value="all">TODAS (1-9)</option>
                 </select>
-                <button id="play-btn">REPRODUCIR GRITO</button>
+                <button id="play-btn">OÍR</button>
             </div>
 
             <div class="pokedex-screen">
@@ -50,6 +55,7 @@
             </div>
         </div>
 
+        <!-- VISTA DEX (Base de altura con Scroll) -->
         <div id="gritodex-view" class="hidden">
             <div class="pokedex-screen">
                 <div id="gritodex-screen">
@@ -67,8 +73,8 @@
         </div>
     </div>
 
-    <audio id="snd-success" src="https://assets.mixkit.co/active_storage/sfx/2000/2000-preview.mp3"></audio>
-    <audio id="snd-error" src="https://assets.mixkit.co/active_storage/sfx/2003/2003-preview.mp3"></audio>
+    <img src="https://assets.mixkit.co/active_storage/sfx/2000/2000-preview.mp3" id="snd-success" style="display:none">
+    <img src="https://assets.mixkit.co/active_storage/sfx/2003/2003-preview.mp3" id="snd-error" style="display:none">
 
     <script src="script.js"></script>
 </body>
