@@ -1,4 +1,3 @@
-
 const GEN_RANGES = {
     "1": { min: 1, max: 151 },
     "2": { min: 152, max: 251 },
@@ -136,4 +135,3 @@ nextBtn.onclick = startNewRound;
 genSelect.onchange = startNewRound;
 
 startNewRound();
-
