@@ -1,13 +1,10 @@
+
 /* --- TEMAS CROMÁTICOS --- */
 .theme-1 { --pk: #DC0A2D; --bg: #3B4CCA; --ball: #FFDE00; --txt: #fff; }
 .theme-2 { --pk: #4A4A4A; --bg: #D4AF37; --ball: #1A1A1A; --txt: #fff; }
 .theme-3 { --pk: #002366; --bg: #800000; --ball: #00A86B; --txt: #fff; }
 .theme-4 { --pk: #B9F2FF; --bg: #222; --ball: #fff; --txt: #fff; }
 .theme-5 { --pk: #111; --bg: #fff; --ball: #444; --txt: #fff; }
-.theme-6 { --pk: #722F37; --bg: #E6A8B3; --ball: #fff; --txt: #fff; } /* Gen 6: kalos X/Y */
-.theme-7 { --pk: #E67E22; --bg: #F1C40F; --ball: #34495E; --txt: #fff; } /* Gen 7: Alola Sol/Luna */
-.theme-8 { --pk: #2980B9; --bg: #C0392B; --ball: #fff; --txt: #fff; } /* Gen 8: Galar Espada/Escudo */
-.theme-9 { --pk: #8E44AD; --bg: #D35400; --ball: #fff; --txt: #fff; } /* Gen 9: Paldea Escarlata/Púrpura */
 .theme-all { --pk: #A78BFA; --bg: #F5F5DC; --ball: #301934; --txt: #fff; }
 
 :root {
@@ -98,3 +95,4 @@ body::before {
 .red { background: #ff0000; } .yellow { background: #f1c40f; } .green { background: #2ecc71; }
 .pokedex-screen { background-color: #dedede; padding: 10px; border-radius: 8px; border: 4px solid #444; }
 .hidden { display: none; }
+
