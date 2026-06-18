@@ -1,14 +1,11 @@
+
 const GEN_RANGES = {
     "1": { min: 1, max: 151 },
     "2": { min: 152, max: 251 },
     "3": { min: 252, max: 386 },
     "4": { min: 387, max: 493 },
     "5": { min: 494, max: 649 },
-    "6": { min: 650, max: 721 },  // Gen 6 (Kalos)
-    "7": { min: 722, max: 809 },  // Gen 7 (Alola)
-    "8": { min: 810, max: 905 },  // Gen 8 (Galar / Hisui)
-    "9": { min: 906, max: 1025 }, // Gen 9 (Paldea)
-    "all": { min: 1, max: 1025 }
+    "all": { min: 1, max: 649 }
 };
 
 const appBody = document.getElementById('app-body');
@@ -138,5 +135,5 @@ playBtn.onclick = () => cryAudio?.play();
 nextBtn.onclick = startNewRound;
 genSelect.onchange = startNewRound;
 
-// Inicializa el juego al cargar la página
 startNewRound();
+
